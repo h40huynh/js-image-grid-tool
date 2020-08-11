@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Draw</title>
+</head>
+
+<body>
+    <div id=tools>
+        <button id="hideOptions">
+            Hide options
+        </button><br>
+        <hr>
+        <div id="tools-container">
+            <label for="inumber">Image url: </label><br>
+            <input type="text" name="imageurl" id="imageurl" value="http://">
+            <br>
+            <input type="button" value="Load" id="loadimageurl">
+            <br>
+            <hr>
+            <label for="imagefile">Or Image file: </label><br>
+            <input type="file" name="imagefile" id="imagefile">
+            <input type="button" value="Load" id="loadimagefile">
+            <br>
+            <hr>
+
+            <label for="inumber">Number of frame: </label><br>
+            <input type="number" name="inumber" id="inumber" value="4">
+            <br>
+
+            <label for="icolor">Color: </label><br>
+            <input type="text" name="icolor" id="icolor" value="pink">
+            <br>
+            <input type="button" value="Set" id="setbutton">
+            <br>
+            <hr>
+        </div>
+    </div>
+    <div id="app">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
